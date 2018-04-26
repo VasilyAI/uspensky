@@ -1,0 +1,7 @@
+node_modules
+build
+.idea
+.gulp
+uspensky-DISIGN
+dist
+package-lock.json

@@ -14,6 +14,7 @@
 .first-screen-slider
 	height: 100vh
 	width: 100%
+
 .item-slider
 	position: relative
 
@@ -58,7 +59,6 @@
 			top: 0
 			transform: rotate(45deg)
 
-
 .head-logo
 	display: inline-block
 	margin-left: 60px
@@ -99,7 +99,30 @@
 
 
 // COMFORT ==================================================
+.second-screen
+	position: relative
 
+.second-screen-slider
+	width: 100%
+	height: 100vh
+
+.description
+	background-color: rgba(54, 67, 92, .85)
+	padding:
+		top: 70px
+		left: 50px
+	position: absolute
+	width: 50%
+	height: 100vh
+	.title
+		max-width: 570px
+		margin-bottom: 30px
+	.-subtitle
+		margin-top: 50px
+
+.empty
+	position: relative
+	width: 50%
 //===========================================================/
 
 
@@ -118,7 +141,7 @@
 	.title
 		margin-bottom: 20px
 		max-width: 210px
-	.link.-medium
+	.-medium
 		display: inline-block
 		padding-left: 20px
 		margin:
@@ -133,14 +156,38 @@
 		left: 140px
 	.-title-uprc
 		max-width: 400px
-	.link.opacity-20.--white
+	.link
 		padding-left: 35px
-
 //===========================================================/
 
 
 // THISIS ===================================================
+#thisis
+	padding:
+		top: 97px
+		bottom: 120px
+	.title
+		max-width: 600px
+		margin-bottom: 70px
 
+.thisis-item
+	position: relative
+	padding-right: 30px
+	margin-bottom: 60px
+	.thisis-item-img
+		position: absolute
+		width: 86px
+		height: 82px
+		background-color: $light-grey
+	.text
+		padding-left: 115px
+	.-subtitle
+		margin-bottom: 10px
+	.thisis-text
+		display: inline-block
+		height: 95px
+		margin-bottom: 5px
+		overflow: hidden
 //===========================================================/
 
 
@@ -155,13 +202,17 @@
 	.title
 		margin-bottom: 40px
 		max-width: 300px
-	.text.-subtitle
-		margin-top: 60px
+	.-subtitle
+		margin:
+			top: 60px
+			bottom: 30px
+	.vtb24-logo
+		padding: 0 25px
 
 .wrapp-form
 	.-border-left
 		max-width: 360px
-	.-form.--star
+	.-form
 		margin-top: 25px
 		max-width: 430px
 //===========================================================/
@@ -202,7 +253,6 @@
 			border: none
 			top: calc(50% - 17.5px)
 			left: calc(50% - 17.5px)
-
 //===========================================================/
 
 
@@ -220,7 +270,10 @@
 
 
 // STRATEGY =================================================
-
+#strategy
+	padding:
+		top: 95px
+		bottom: 120px
 //===========================================================/
 
 
@@ -264,7 +317,7 @@
 	padding-bottom: 80px
 	.title
 		margin-bottom: 50px
-	.link.-uprc.--dark.arrow
+	.link
 		margin-top: 50px
 
 .documents-item
@@ -274,7 +327,6 @@
 		width: 100%
 		height: 100%
 		object-fit: cover
-
 //===========================================================/
 
 
@@ -294,7 +346,7 @@
 	padding:
 		top: 90px
 		bottom: 90px
-	.link.--white
+	.link
 		padding-left: 35px
 //===========================================================/
  

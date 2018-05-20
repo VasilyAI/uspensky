@@ -126,6 +126,8 @@ ol
 		color: $white
 	&.--bold
 		font-weight: 700
+	&.--red
+		color: $red
 
 .title
 	font-family: $default-font
@@ -136,7 +138,7 @@ ol
 	&.-promo
 		font-size: 54px
 		line-height: 64px
-		font-weight: 900
+		text-transform: uppercase
 	&.--white
 		color: $white
 
@@ -242,7 +244,7 @@ input[placeholder]
 		color: $font-color
 		list-style-type: none
 		padding-left: 20px
-		margin-bottom: 35px
+		margin-bottom: 32px
 		&:last-child
 			margin-bottom: 0
 		&::before
@@ -272,10 +274,10 @@ input[placeholder]
 		position: absolute
 		display: inline-block
 		content: ''
-		width: 20px
-		height: 30px
+		width: 17px
+		height: 27px
 		top: -3px
-		left: 0
+		left: 5px
 		background-image: url("../img/svg/icon.svg")
 		background-repeat: no-repeat
 		background-position: center
@@ -284,15 +286,15 @@ input[placeholder]
 .marker
 	display: inline-block
 	position: relative
-	padding-left: 30px
+	padding-left: 28px
 	&.--white
 		color: $white
 	&::before
 		position: absolute
 		display: inline-block
 		content: ''
-		width: 25px
-		height: 30px
+		width: 18px
+		height: 26px
 		top: -3px
 		left: 0
 		background-image: url("../img/svg/marker.svg")
@@ -312,7 +314,7 @@ input[placeholder]
 		top: 5px
 		right: -30px
 		transform: rotate(90deg)
-		background-image: url("../svg/next.svg")
+		background-image: url("../img/svg/next.svg")
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
@@ -364,7 +366,7 @@ input[placeholder]
 		height: 25px
 		top: 0
 		left: 0
-		background-image: url("../svg/clock-circular-outline.svg")
+		background-image: url("../img/svg/clock.svg")
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover

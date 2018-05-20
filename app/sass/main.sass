@@ -6,10 +6,30 @@
 
 .navigation
 	position: absolute
-	padding: 40px
+	padding:
+		right: 40px
+		left: 64px
 	top: 0
 	left: 0
 	width: 100%
+	height: 103px
+	.text-logo
+		display: inline-block
+		position: relative
+		top: -33px
+		font-size: 22px
+		font-weight: 700
+		text-transform: uppercase
+		margin-left: 30px
+		span
+			display: block
+			font-size: 13px
+			font-weight: 400
+	.text.marker
+		display: inline-block
+		position: relative
+		margin-left: 20px
+		top: -40px
 
 .first-screen-slider
 	height: 100vh
@@ -30,6 +50,7 @@
 	height: 25px
 	position: relative
 	cursor: pointer
+	top: -49px
 	.burger
 		display: inline-block
 		position: relative
@@ -60,10 +81,21 @@
 			transform: rotate(45deg)
 
 .head-logo
+	position: relative
 	display: inline-block
+	background-color: $blue
+	width: 105px
+	height: 103px
 	margin-left: 60px
+	img
+		position: absolute
+		width: 60px
+		top: calc(50% - 30px)
+		left: calc(50% - 30px)
+
 
 .head-options
+	margin-top: 20px
 	display: inline-block
 	float: right
 	.btn
@@ -99,33 +131,61 @@
 
 
 // COMFORT ==================================================
-.second-screen
-	position: relative
-
-.second-screen-slider
-	width: 100%
-	height: 100vh
-
-.description
-	background-color: rgba(54, 67, 92, .85)
+#comfort
 	padding:
-		top: 70px
-		left: 50px
-	position: absolute
-	width: 50%
-	height: 100vh
+		top: 93px
+		bottom: 73px
 	.title
-		max-width: 570px
-		margin-bottom: 30px
-	.-subtitle
-		margin-top: 50px
+		margin-bottom: 50px
+		span
+			display: block
 
-.empty
-	position: relative
-	background: none
-	width: 50%
-	height: 100vh
+.comfort-wrapp
+	border: 5px solid $light-grey
+	padding:
+		top: 40px
+		left: 40px
+
+.comfort-item
+	margin-bottom: 30px
+	img
+		width: 50px
+		height: 50px
+		position: absolute
+	.text.-thisis
+		max-width: 340px
+		padding-left: 70px
 //===========================================================/
+
+.gallery-wrapp
+	overflow: hidden
+	position: relative
+	img
+		position: relative
+		width: 100%
+		height: 100%
+		object-fit: cover
+	.text.-thisis
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 200
+		margin:
+			top: 40px
+			right: 40px
+			left: 40px
+
+.block-gradient
+	top: 0
+	left: 0
+	position: absolute
+	height: 100%
+	width: 100%
+	background: -moz-linear-gradient(top,  rgba(34,43,67,1) 0%, rgba(34,43,67,0) 100%)
+	background: -webkit-linear-gradient(top,  rgba(34,43,67,1) 0%,rgba(34,43,67,0) 100%)
+	background: linear-gradient(to bottom,  rgba(34,43,67,1) 0%,rgba(34,43,67,0) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222b43', endColorstr='#00222b43',GradientType=0 )
+	z-index: 100
 
 
 // REVIEW-ONE ===============================================
@@ -142,7 +202,7 @@
 		right: 105px
 	.title
 		margin-bottom: 20px
-		max-width: 210px
+		max-width: 230px
 	.-medium
 		display: inline-block
 		padding-left: 20px
@@ -169,18 +229,19 @@
 		top: 97px
 		bottom: 120px
 	.title
-		max-width: 600px
+		max-width: 710px
 		margin-bottom: 70px
 
 .thisis-item
 	position: relative
 	padding-right: 30px
 	margin-bottom: 60px
+	height: 164px
 	.thisis-item-img
 		position: absolute
 		width: 86px
 		height: 82px
-		background-color: $light-grey
+		//background-color: $light-grey
 	.text
 		padding-left: 115px
 	.-subtitle
@@ -203,13 +264,16 @@
 		right: 105px
 	.title
 		margin-bottom: 40px
-		max-width: 300px
+		max-width: 320px
 	.-subtitle
 		margin:
 			top: 60px
 			bottom: 30px
 	.vtb24-logo
 		padding: 0 25px
+	.list
+		li
+			margin-bottom: 15px
 
 .wrapp-form
 	.-border-left
@@ -221,40 +285,7 @@
 
 
 // DEAL =====================================================
-.circle-list
-	.list-item
-		margin-bottom: 40px
-		position: relative
-		padding-left: 65px
-		.circle
-			top: 0
-			left: 0
-			width: 47px
-			height: 47px
-			border-radius: 100%
-			position: absolute
-		.circle-border
-			display: inline-block
-			width: 47px
-			height: 47px
-			border-radius: 100%
-			border: 1px solid $cian
-			background-color: $light-grey
-		.circle-number
-			display: inline-block
-			text-align: center
-			color: $red
-			font-size: 20px
-			line-height: 35px
-			font-weight: bold
-			position: absolute
-			width: 35px
-			height: 35px
-			border-radius: 100%
-			background-color: $white
-			border: none
-			top: calc(50% - 17.5px)
-			left: calc(50% - 17.5px)
+
 //===========================================================/
 
 
@@ -264,10 +295,31 @@
 		top: 120px
 		bottom: 120px
 	.title
-		max-width: 430px
+		max-width: 500px
 		margin-bottom: 60px
+	.text.-thesis
+		max-width: 500px
+		margin-top: 11px
+		display: inline-block
+		padding-left: 82px
 	.btn
 		margin-top: 30px
+
+.structure-item
+	margin-bottom: 30px
+
+.romb-icon
+	position: absolute
+	display: inline-block
+	width: 60px
+	height: 70px
+	img
+		position: absolute
+	span
+		position: absolute
+		top: calc(50% - 13px)
+		left: calc(50% - 5px)
+
 //===========================================================/
 
 
@@ -277,7 +329,7 @@
 		top: 95px
 		bottom: 120px
 	.title
-		max-width: 830px
+		max-width: 950px
 		margin-bottom: 30px
 	.-thesis
 		margin-bottom: 20px

@@ -7,8 +7,8 @@ Error: File to import not found or unreadable: ../libs/bootstrap-grid/bootstrap-
 1: @import "base"
 2: 
 3: // HEAD =====================================================
-4: .first-screen
-5: 	position: relative
+4: #head
+5: 	overflow: hidden
 6: 
 
 Backtrace:
@@ -83,4 +83,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../libs/bootstrap-grid/bootstrap-grid.\A         on line 1 of _libs.sass\A         from line 3 of _base.sass\A         from line 1 of main.sass\A \A 1: @import \"base\"\A 2: \A 3: // HEAD =====================================================\A 4: .first-screen\A 5: 	position: relative\A 6: "; }
+  content: "Error: File to import not found or unreadable: ../libs/bootstrap-grid/bootstrap-grid.\A         on line 1 of _libs.sass\A         from line 3 of _base.sass\A         from line 1 of main.sass\A \A 1: @import \"base\"\A 2: \A 3: // HEAD =====================================================\A 4: #head\A 5: 	overflow: hidden\A 6: "; }

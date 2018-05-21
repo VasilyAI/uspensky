@@ -1,8 +1,20 @@
 @import "base"
 
 // HEAD =====================================================
+#head
+	overflow: hidden
+
 .first-screen
 	position: relative
+
+.head-gradient
+	position: absolute
+	height: 184px
+	width: 100%
+	background-image: -moz-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
+
 
 .navigation
 	position: absolute
@@ -170,10 +182,10 @@
 		padding-top: 13px
 
 //===========================================================/
-
 .gallery-wrapp
 	overflow: hidden
 	position: relative
+	border-right: 1px solid $white
 	img
 		position: relative
 		width: 100%
@@ -190,16 +202,14 @@
 			left: 40px
 
 .block-gradient
-	border-right: 1px solid $white
 	top: 0
 	left: 0
 	position: absolute
-	height: 100%
+	height: 190px
 	width: 100%
-	background: -moz-linear-gradient(top,  rgba(34,43,67,1) 0%, rgba(34,43,67,0) 100%)
-	background: -webkit-linear-gradient(top,  rgba(34,43,67,1) 0%,rgba(34,43,67,0) 100%)
-	background: linear-gradient(to bottom,  rgba(34,43,67,1) 0%,rgba(34,43,67,0) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222b43', endColorstr='#00222b43',GradientType=0 )
+	background-image: -moz-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
 	z-index: 100
 
 .border-none

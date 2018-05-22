@@ -381,7 +381,47 @@
 //===========================================================/
 
 
-// GALLERY ==================================================
+// GALLERY-02 ===============================================
+.gallery02-title
+	.title
+		margin-bottom: 50px
+	.link
+		position: relative
+		margin-right: 30px
+		transition: $transition-ease
+		&:last-child
+			margin-right: 0
+
+.link.active
+	color: $red
+	&::after
+		position: absolute
+		display: inline-block
+		content: ''
+		background: url("../img/svg/next-red.svg") 0 0 no-repeat
+		width: 20px
+		height: 20px
+		transform: rotate(90deg)
+		bottom: -30px
+		left: calc(50% - 10px)
+
+
+.gallery-wrap
+	margin-top: 45px
+	position: relative
+	text-align: center
+
+.gallery-item
+	img
+		width: 100%
+		height: 100vh
+		object-fit: cover
+	.text.-thesis
+		position: absolute
+		display: block
+		max-width: 770px
+		bottom: 114px
+		left: calc(50% - 385px)
 
 //===========================================================/
 
@@ -389,6 +429,15 @@
 // FACT =====================================================
 #fact
 	padding-bottom: 120px
+	background: url("../img/fact-background.jpg") 0 0 no-repeat
+	padding:
+		top: 80px
+	.btn-wrapp
+		text-align: center
+		margin-top: 30px
+
+.fact-title
+	margin-bottom: 10px
 	.fact-logo
 		position: absolute
 		display: inline-block
@@ -399,47 +448,81 @@
 		position: relative
 		top: 20px
 		max-width: 630px
-		margin-bottom: 60px
 		padding-left: 180px
-	.btn
-		margin-top: 15px
+
 
 .fact-item
-	min-height: 293px
-	border: 10px solid $light-grey
-	outline: none
+	margin-top: 50px
+	background-color: rgba($white, .9)
 	padding:
-		top: 30px
+		top: 40px
 		right: 50px
-		left: 40px
-	margin-bottom: 30px
-	transition: $transition-ease
+		bottom: 40px
+		left: 48px
+	.text.-title-uprc
+		text-align: center
+
+.fact-info
+	max-width: 316px
+	//min-height: 293px
+	margin-bottom: 36px
+	.text.-subtitle
+		margin-bottom: 10px
+
+.letters
+	position: relative
+	padding: 9px
+	overflow: hidden
+	cursor: pointer
 	&:hover
-		border: 10px solid $white
-		background-color: $cian
-		outline: none
-		box-shadow: $box-shadow
-		transform: $transform-up
-		.text
-			color: $white
+		.blackout
+			top: 0
+	img
+		position: relative
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: 50
+	.letters-border
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 100
+	.blackout
+		position: absolute
+		left: 0
+		width: 100%
+		height: 100%
+		transition: $transition-ease
+		cursor: pointer
+		background-color: rgba($cian,.7)
+		top: -100%
+		z-index: 1000
+		img
+			width: 50px
+			height: 50px
+			top: calc(50% - 25px)
+			left: calc(50% - 25px)
+
+
 //===========================================================/
 
 
 // DOCUMENTS ================================================
 #documents
-	padding-bottom: 80px
+	padding:
+		top: 80px
+		bottom: 80px
 	.title
 		margin-bottom: 50px
-	.link
+	.documents-link
 		margin-top: 50px
+		text-align: center
 
 .documents-item
-	height: 293px
-	background-color: $light-grey
-	img
-		width: 100%
-		height: 100%
-		object-fit: cover
+	.text
+		margin-top: 10px
+		text-align: center
 //===========================================================/
 
 

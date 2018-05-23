@@ -185,12 +185,32 @@
 .gallery-wrapp
 	overflow: hidden
 	position: relative
+	border: 0
 	border-right: 1px solid $white
+	cursor: pointer
+	&:hover
+		.block-gradient
+			opacity: 1
+			height: 100%
+		.icon-loupe
+			bottom: 50%
+			transform: translateY(25px)
+			opacity: 1
 	img
 		position: relative
 		width: 100%
 		height: 100%
 		object-fit: cover
+		margin-bottom: -1px
+	.icon-loupe
+		position: absolute
+		width: 50px
+		height: 50px
+		z-index: 200
+		bottom: -50px
+		left: calc(50% - 25px)
+		transition: $transition-ease
+		opacity: 0
 	.text.-thisis
 		position: absolute
 		top: 0
@@ -211,6 +231,8 @@
 	background-image: -webkit-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
 	background-image: -ms-linear-gradient( 90deg, rgba(34,43,67,0) 0%, rgb(34,43,67) 100%)
 	z-index: 100
+	opacity: .7
+	transition: $transition-ease
 
 .border-none
 	border-right: none
@@ -405,6 +427,16 @@
 		bottom: -30px
 		left: calc(50% - 10px)
 
+.gallery02-gradient
+	position: absolute
+	background-image: -moz-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 436px
+	z-index: 100
 
 .gallery-wrap
 	margin-top: 45px
@@ -422,16 +454,30 @@
 		max-width: 770px
 		bottom: 114px
 		left: calc(50% - 385px)
+		z-index: 200
 
 //===========================================================/
 
 
 // FACT =====================================================
 #fact
+	position: relative
 	padding-bottom: 120px
-	background: url("../img/fact-background.jpg") 0 0 no-repeat
+	background: url("../img/fact-background.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
 	padding:
 		top: 80px
+	.fact-gradient
+		background-image: -moz-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+		background-image: -webkit-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+		background-image: -ms-linear-gradient( 90deg, rgb(34,43,67) 0%, rgba(34,43,67,0) 100%)
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 196px
 	.btn-wrapp
 		text-align: center
 		margin-top: 30px
@@ -477,6 +523,11 @@
 	&:hover
 		.blackout
 			top: 0
+			opacity: 1
+		.icon-loupe
+			bottom: 50%
+			transform: translateY(25px)
+			opacity: 1
 	img
 		position: relative
 		width: 100%
@@ -491,18 +542,22 @@
 	.blackout
 		position: absolute
 		left: 0
+		top: 0
 		width: 100%
 		height: 100%
 		transition: $transition-ease
 		cursor: pointer
 		background-color: rgba($cian,.7)
-		top: -100%
-		z-index: 1000
-		img
-			width: 50px
-			height: 50px
-			top: calc(50% - 25px)
-			left: calc(50% - 25px)
+		opacity: 0
+		z-index: 200
+	.icon-loupe
+		position: absolute
+		width: 50px
+		height: 50px
+		bottom: -50px
+		left: calc(50% - 25px)
+		z-index: 300
+		transition: $transition-ease
 
 
 //===========================================================/

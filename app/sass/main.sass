@@ -110,12 +110,13 @@
 	width: 105px
 	height: 103px
 	margin-left: 58px
-	img
+	svg
 		position: absolute
 		width: 60px
+		height: 60px
 		top: calc(50% - 30px)
 		left: calc(50% - 30px)
-
+		fill: $white
 
 .head-options
 	margin-top: 30px
@@ -182,6 +183,8 @@
 		padding-top: 13px
 
 //===========================================================/
+
+// GALLERY-01 ===============================================
 .gallery-wrapp
 	overflow: hidden
 	position: relative
@@ -202,15 +205,6 @@
 		height: 100%
 		object-fit: cover
 		margin-bottom: -1px
-	.icon-loupe
-		position: absolute
-		width: 50px
-		height: 50px
-		z-index: 200
-		bottom: -50px
-		left: calc(50% - 25px)
-		transition: $transition-ease
-		opacity: 0
 	.text.-thisis
 		position: absolute
 		top: 0
@@ -220,6 +214,17 @@
 			top: 40px
 			right: 40px
 			left: 40px
+
+.icon-loupe
+	position: absolute
+	fill: $white
+	width: 50px
+	height: 50px
+	z-index: 200
+	bottom: -50px
+	left: calc(50% - 25px)
+	transition: $transition-ease
+	opacity: 0
 
 .block-gradient
 	top: 0
@@ -236,6 +241,8 @@
 
 .border-none
 	border-right: none
+
+//===========================================================/
 
 // REVIEW-ONE ===============================================
 .wrapp-align
@@ -269,6 +276,13 @@
 		max-width: 400px
 	.link
 		padding-left: 35px
+
+.icon-uspensky3
+	position: absolute
+	bottom: 40px
+	right: 45px
+	fill: #303c5e
+	opacity: .9
 //===========================================================/
 
 
@@ -386,7 +400,7 @@
 .strategy-item
 	position: relative
 	margin-bottom: 66px
-	img
+	svg
 		position: absolute
 		width: 75px
 		height: 75px
@@ -640,12 +654,16 @@
 	padding:
 		top: 90px
 		bottom: 90px
+	svg
+		width: 66px
+		height: 66px
+		fill: $white
 	.text.text-logo
 		display: inline-block
 	.footer-logo
 		display: inline-block
 		position: relative
-		top: 16px
+		top: -16px
 		font-size: 22px
 		font-weight: 700
 		text-transform: uppercase
@@ -657,12 +675,6 @@
 			top: 2px
 			font-size: 13px
 			font-weight: 400
-
-.footer
-	display: inline-block
-	img
-		width: 66px
-		height: 66px
 
 .footer-options
 	float: right

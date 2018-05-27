@@ -734,6 +734,80 @@
 
 
 //FLAT_SECTION01 ============================================
+#flat-section01
+	padding:
+		top: 24px
+		bottom: 35px
+
+.flat-header
+	.btn
+		background: #ebedf0
+		color: #919294
+		padding:
+			left: 30px
+			right: 30px
+		margin-left: 25px
+		&:first-child
+			margin-left: 0
+	.btn.active
+		background: $red
+		color: $white
+	.link
+		position: relative
+		top: 13px
+		float: right
+
+.sidebar
+	.text.-subtitle
+		margin:
+			top: 50px
+			bottom: 68px
+	.btn
+		width: 223px
+		text-align: left
+		margin-bottom: 20px
+		&::after
+			position: absolute
+			display: inline-block
+			content: ''
+			width: 18px
+			height: 18px
+			top: calc(50% - 9px)
+			right: 20px
+			transform: rotate(0deg)
+			background-image: url("../img/svg/next-white.svg")
+			background-repeat: no-repeat
+	.list
+		li
+			font-size: 18px
+
+.flat-item
+	position: relative
+	.compas
+		position: absolute
+		top: 0
+		right: 0
+	.text
+		text-align: center
+	.text.-subtitle
+		margin-bottom: 36px
+	.text.-thesis
+		margin-bottom: 33px
+	.text.-thesis.--star
+		max-width: 440px
+		margin: 0 auto
+		margin-top: 33px
+	.loor-plan
+		position: relative
+		&::after
+			position: absolute
+			display: inline-block
+			content: 'ул. Глеба Успенского'
+			font-family: $default-font
+			font-size: 18px
+			transform: rotate(90deg)
+			top: 50%
+			right: -13%
 
 //===========================================================/
 

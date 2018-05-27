@@ -144,6 +144,52 @@
 		margin-bottom: 30px
 	.btn
 		margin-bottom: 28px
+
+.fixed-nav
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	padding: 10px
+	background-color: $cian
+	z-index: 1040
+	// .nav-logo
+	// 	display: inline-block
+	// 	width: 50px
+	.text-logo
+		display: inline-block
+		position: relative
+		top: 9px
+		font-size: 22px
+		font-weight: 700
+		text-transform: uppercase
+		margin-left: 14px
+	.panel-menu
+		position: relative
+		top: 7px
+		margin-left: 60px
+		margin-top: 0
+		margin-bottom: 0
+		padding-left: 0
+		display: inline-block
+		*
+			display: inline-block
+	.list
+		li
+			margin-right: 50px
+			padding-left: 0
+			margin-bottom: 0
+			&:before
+				display: none
+			a
+				transition: $transition-ease
+				color: $white
+				&:hover
+					color: $red
+	.head-options
+		margin-top: 0
+		.btn
+			top: 0
 //===========================================================/
 
 

@@ -126,7 +126,25 @@
 		position: relative
 		top: -14px
 		margin-left: 28px
-	.phone
+	.text.phone
+		position: relative
+		span
+			position: relative
+			padding: 2px 5px
+			background: $red
+			border: 1px solid $red
+			font-size: 14px
+			top: -2px
+			left: 5px
+			transition: $transition-ease
+			&:hover
+				border: 1px solid $white
+				a
+					color: $white
+			a
+				color: $grey
+				text-decoration: none
+				transition: $transition-ease
 		.link
 			text-align: right
 			display: block
@@ -764,9 +782,33 @@
 			top: 50px
 			bottom: 68px
 	.btn
+		background: none
+		color: $font-color
+		margin:
+			top: 10px
+			bottom: 10px
+		&::before
+			position: absolute
+			display: inline-block
+			content: ''
+			width: 8px
+			height: 8px
+			background: $red
+			top: 24px
+			left: 0
+			transform: rotate(45deg)
+	.btn.active
 		width: 223px
+		background: $red
+		color: $white
 		text-align: left
-		margin-bottom: 20px
+
+		&::before
+			position: absolute
+			display: inline-block
+			content: ''
+			width: 0
+			height: 0
 		&::after
 			position: absolute
 			display: inline-block
@@ -778,13 +820,7 @@
 			transform: rotate(0deg)
 			background-image: url("../img/svg/next-white.svg")
 			background-repeat: no-repeat
-	.list
-		li
-			a
-				font-size: 18px
-				color: $red
-				&:visited
-					color: $red
+
 
 .flat-sec01-item
 	position: relative

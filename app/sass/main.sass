@@ -524,9 +524,7 @@
 #fact
 	position: relative
 	padding-bottom: 120px
-	background: url("../img/fact-background.jpg")
-	background-repeat: no-repeat
-	background-position: center
+	background: url("../img/fact-background.jpg") 0 0 no-repeat
 	background-size: cover
 	padding:
 		top: 80px
@@ -782,7 +780,11 @@
 			background-repeat: no-repeat
 	.list
 		li
-			font-size: 18px
+			a
+				font-size: 18px
+				color: $red
+				&:visited
+					color: $red
 
 .flat-sec01-item
 	position: relative

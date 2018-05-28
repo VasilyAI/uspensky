@@ -774,14 +774,14 @@
 .flat-sec02
 	position: relative
 	margin-bottom: 60px
-	.btn.arrow
+	.btn.-zero
 		float: left
-		background: none
 		padding:
 			left: 50px
 			right: 33px
 		color: $font-color
-		border: 1px solid $red
+		&:hover
+			color: $white
 		&::after
 			position: absolute
 			display: inline-block
@@ -801,6 +801,9 @@
 		right: 0
 		width: 20px
 		height: 20px
+		transition: $transition-ease
+		&:hover
+			transform: rotate(-180deg)
 
 .sidebar-sec02
 	.text.-subtitle
@@ -816,14 +819,21 @@
 			right: 38px
 		margin:
 			top: 16px
+	.btn.cian
+		background: $cian
 
 .purchase-options
 	margin-top: 40px
-	.text.-subtitle
-		text-align: center
 	.list
 		li
+			margin-bottom: 13px
+	.text
+		margin-bottom: 30px
 
+.flat-sec02-item
+	text-align: center
+	img
+		margin-top: 70px
 //===========================================================/
 
 

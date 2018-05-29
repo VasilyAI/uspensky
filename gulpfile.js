@@ -14,7 +14,6 @@ var gulp           = require('gulp'),
 	notify         = require("gulp-notify");
 
 // Скрипты проекта
-
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
@@ -26,8 +25,8 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/libs/jquery/jquery-2.2.4.min.js',
+		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

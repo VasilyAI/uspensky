@@ -65,6 +65,28 @@ function updateSizes() {
     
 }
 
+function init(){
+    //setting map
+    myMap = new ymaps.Map("mapMain-02", {
+        center: [52.25751057, 104.32739950],
+        zoom: 16
+    });
+
+    myMap.behaviors.disable('scrollZoom');
+
+    myPlacemark = new ymaps.Placemark([52.25751057, 104.32739950], {
+        hintContent: 'ул. Байкальская, 206, БЦ "ЛИСИХА", офис 511',
+        balloonContent: 'Офис продаж: ул. Байкальская, 206, БЦ "ЛИСИХА", офис 511'
+    },
+        { iconLayout: 'default#image',
+            iconImageHref: '../img/svg/marker.svg',
+            iconImageSize: [42, 57],
+            iconImageOffset: [-20, -47] }
+            );
+
+    myMap.geoObjects.add(myPlacemark);
+}
+
 if ('objectFit' in document.documentElement.style === false) {
     document.addEventListener('DOMContentLoaded', function () {
         Array.prototype.forEach.call(document.querySelectorAll('img[data-object-fit]'), function (image) {

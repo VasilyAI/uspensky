@@ -29,6 +29,8 @@
 		/*body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }*/
 	</style>
 
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -1008,8 +1010,8 @@
 						</a>
 					</div>
 					<div id="mapMain-02" class="my-map">
-						<script type="text/javascript" charset="utf-8" async
-								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad27fcb1548df907f3fe7044d85a7a49a751ed3803606f48861eefaa167d53fea&amp;width=100%25&amp;height=594&amp;lang=ru_RU&amp;scroll=false"></script>
+						<!--<script type="text/javascript" charset="utf-8" async-->
+								<!--src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad27fcb1548df907f3fe7044d85a7a49a751ed3803606f48861eefaa167d53fea&amp;width=100%25&amp;height=594&amp;lang=ru_RU&amp;scroll=false"></script>-->
 					</div>
 				</div>
 			</div>
@@ -1040,6 +1042,12 @@
 	</main>
 
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+	</script>
 
 </body>
 </html>

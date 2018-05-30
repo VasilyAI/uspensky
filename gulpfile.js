@@ -26,6 +26,13 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/jquery-2.2.4.min.js',
+		'app/libs/PageScroll2id/PageScroll2id.min.js',
+		'app/libs/animatedModal/animatedModal.js',
+		'app/libs/wow/dist/wow.js',
+		'app/libs/lightgallery/dist/js/lightgallery.js',
+		'app/libs/lg-thumbnail/dist/lg-thumbnail.js',
+		'app/libs/lg-fullscreen/dist/lg-fullscreen.js',
+		'app/libs/maskedinput/jquery.maskedinput.js',
 		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

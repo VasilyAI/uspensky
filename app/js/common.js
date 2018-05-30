@@ -28,6 +28,32 @@ $(window).on('scroll', function () {
 
 function loadFunc() {
 
+    //ANIMATE=====================================================
+    //============================================================//
+    var Wow = new WOW({
+        offset: 150,
+        mobile: false
+    }).init();
+
+    //SCROLL =====================================================
+    //============================================================/
+    $('.jsScroll').mPageScroll2id({
+        offset: 0,
+        scrollSpeed: 950
+    });
+
+    //LIGHT GALLERY===============================================
+    //============================================================/
+    $('.jsGallery-item').lightGallery({
+        selector: '.gallery-wrapp',
+        thumbnail: true,
+        animateThumb: true,
+        enableTouch: true,
+        enableDrag: false,
+        thumbWidth: 100,
+        thumbContHeight: 100,
+        currentPagerPosition: 'middle',
+    });
 }
 
 function resizeFunc() {
@@ -35,22 +61,26 @@ function resizeFunc() {
 }
 
 function scrollFunc() {
-    // fixed Navigation
+
+    //FIX NAVIGATION==============================================
+    //============================================================//
     var nav = ('.fixed-nav'),
-        firstScreenHeight = $('.first-screen').innerHeight();
+        firstScreenHeight = $('.first-screen').innerHeight() - 65;
 
     if ($(window).scrollTop() > firstScreenHeight) {
         $(nav).addClass('-fixed');
-    }
+    };
     if ($(window).scrollTop() < firstScreenHeight) {
         $(nav).removeClass('-fixed');
-    }
+    };
 }
 
 function updateSizes() {
     windowWidth  = window.innerWidth;
     windowHeight = window.innerHeight;
 
+    //FIX HEIGHT FORM BLOCKS======================================
+    //============================================================//
     var form01Height  = $('#review-one .wrapp-form').innerHeight() + 'px',
         form02Height  = $('#pay .wrapp-form').innerHeight() + 'px',
         form03Height  = $('#review-two .wrapp-form').innerHeight() + 'px',
